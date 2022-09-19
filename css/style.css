@@ -1,0 +1,142 @@
+/*FONT*/
+@font-face {
+    font-family: fontpixel;
+    src: url(fontpixel.ttf);
+}
+
+@font-face {
+    font-family: fontpixel2;
+    src: url(Retro\ Gaming.ttf);
+}
+
+
+/*RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #5d6853;
+}
+
+.to-do {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 30px;
+    border: solid 0.1px;
+    box-shadow: 1px 1px 5px;
+    margin-top: 10%;
+    padding: 20px;
+    background-color: rgb(189, 189, 189);
+    
+
+}
+
+.to-do-title {
+    display: flex;
+    background-color: rgb(29, 28, 28);
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 1px 1px 5px #0F0F0B;
+    color: white;   
+    font:  2rem 'fontpixel', sans-serif;
+    
+}
+
+#linha {
+    margin-top: 2px;
+    width: 90%;
+    border: 1px solid rgb(104, 103, 103);
+    opacity: 0.3;
+}
+
+
+.to-do-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.to-do-item {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 1px 1px 5px, 0px 5px 6px rgb(43, 43, 43);
+    border-radius: 2px;
+    font:  2rem 'fontpixel2', sans-serif;
+
+}
+
+.to-do-item div {
+    width: 80%;
+}
+
+.to-do-item:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgb(119, 119, 119);
+    color: #0F0F0B;
+}
+
+.to-do-item input > [type='text'] {
+
+    border: none;
+    width: 80%;
+
+}
+
+.to-do-item input[type='button'], 
+.to-do-item input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    font: inherit;
+
+}
+
+.to-do-item input[type='checkbox']:checked + div{
+    text-decoration: line-through;
+}
+
+
+.to-do-new-item {
+    display: flex;
+    width: 100%;
+    height: 55px;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 10px;
+    font: inherit;
+    border-radius: 20px;
+    font-size: x-large;
+}
+
+.to-do-new-item input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 20px;
+    font: inherit;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px, 0px 5px 6px rgb(43, 43, 43);
+}
+
+.to-do-new-item input::placeholder {
+    font:  2rem 'fontpixel', sans-serif;
+}
